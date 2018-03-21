@@ -74,7 +74,7 @@ articleView.setTeasers = () => {
 };
 
 // COMMENT: Where is this function called? Why?
-// PUT YOUR RESPONSE HERE
+// This function is called in the index.html and new.html to connect the javascript to each. 
 articleView.initNewArticlePage = () => {
   // TODO: Ensure the main .tab-content area is revealed. We might add more tabs later or otherwise edit the tab navigation.
 // $('.tab-content').show();
@@ -119,8 +119,8 @@ $('#articles').append(article.toHtml());
 
 };
 
-// COMMENT: Where is this function called? Why? this is not done and has a secret piece
-// PUT YOUR RESPONSE HERE
+// COMMENT: Where is this function called? Why? 
+// This is called at the bottom of index.html and new.html in a script tag. Once that is called, all of the methods inside of the function can be called in sequence. 
 articleView.initIndexPage = () => {
   articles.forEach(article => $('#articles').append(article.toHtml()));
   articleView.populateFilters();
